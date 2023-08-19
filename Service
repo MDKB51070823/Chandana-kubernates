@@ -1,7 +1,6 @@
 
 check Firewall Rules: check the firewall settings to ensure that there are no rules blocking incoming traffic on the NodePort.
 
-
 Node Accessibility: check if the nodes themselves are accessible from outside the cluster.Try to ping the node's IP address to check there are no networking issues.
 
 Port Availability:check if port 8000 is available for use.
