@@ -1,0 +1,15 @@
+Create a New Container Image:  Load and push the new image for perticular container need to be change.
+
+Update Deployment Configuration: Update the Yaml file with new tag of image and image version.
+
+Apply Configuration Update :Apply the editted configuration using commands like kubectl apply -f deployment.yaml
+
+Rolling Update: The deployment controller will automatically manage the rolling update process.New pod with updated container image will replace the old pod.
+
+Health Checks and Readiness Probes: Check containers have proper health checks and readiness probes configured. This ensures that the new pods are considered healthy before the old pods are terminated.
+
+Scaling and Monitoring: Monitor pod using kubectl get pod command.
+
+Automatic Rollback:If the new pods fail readiness checks or encounter issues, the deployment controller can automatically roll back to the previous version of the deployment
+
+Completion: Once all New pods are up and old pod terminated.The deployment will be completed.
