@@ -1,0 +1,16 @@
+
+check Firewall Rules: check the firewall settings to ensure that there are no rules blocking incoming traffic on the NodePort.
+
+
+Node Accessibility: check if the nodes themselves are accessible from outside the cluster.Try to ping the node's IP address to check there are no networking issues.
+
+Port Availability:check if port 8000 is available for use.
+
+Network Policies:If the cluster has network policies in place, they could potentially be restricting the traffic flow.
+
+Cluster-wide DNS: Check that the DNS within the cluster is functioning properly and able to resolve the service name to the correct IP address.
+
+NodePort Assignment:verify that the NodePort assigned to the service is within the range that the cluster's networking configuration allows.
+
+Firewall on Client Side: Check if client is outside the cluster and trying to access the service. If there is any security might be blocking.
+Service Type: double-check that the service type is indeed NodePort and not something else like ClusterIP or LoadBalancer.
